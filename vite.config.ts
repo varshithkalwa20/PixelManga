@@ -6,21 +6,13 @@ export default defineConfig({
   server: {
     host: "0.0.0.0",
     port: 8080,
-    allowedHosts: [
-      "pixelmanga.onrender.com",
-      "localhost",
-      "127.0.0.1",
-    ],
+    allowedHosts: true,
   },
   preview: {
     port: 8080,
-    allowedHosts: [
-      "pixelmanga.onrender.com",
-      "localhost",
-      "127.0.0.1",
-    ],
+    allowedHosts: true,
   },
-  plugins: [react()], // ✅ no mode check, always include plugin
+  plugins: [react()], 
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
