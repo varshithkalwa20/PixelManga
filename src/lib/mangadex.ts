@@ -1,4 +1,4 @@
-const BASE_URL = 'https://api.mangadex.dev';
+const BASE_URL = 'https://api.mangadex.org';
 
 export interface Manga {
   id: string;
